@@ -24,10 +24,6 @@ app.use("/product", (req, res, next) => {
   res.redirect("/");
 });
 
-app.use((req, res, next) => {
-  console.log("I will be the pirate king");
-  res.send("<h1>I will be the pirate king</h1>");
-});
 const server = http.createServer(app);
 
 app.listen(3000);
